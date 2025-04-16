@@ -9,6 +9,8 @@
     max-height: 500px;
     animation-name: wheel;
     animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .line {
@@ -76,5 +78,15 @@
     
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes cabin {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(-360deg);
     }
 }
